@@ -13,49 +13,73 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Content -->
-			<div id="content">
-				<div class="inner">
+	<!-- Content -->
+		<div id="content">
+			<div class="inner">
 
-					<!-- Post -->
-						<article class="box post post-excerpt">
-							<header>
-								<h2><a href="#">提交公告與技術支援</a></h2>
-								<p>請依照指示將作品提交至google表單
-								</p>
-							</header>
-							<div class="info">
-								<span class="date"><span class="month">May<span></span></span> <span class="day">10</span><span class="year">, 2025</span></span>
-								<ul class="stats">
-									<li><a href="#" class="icon fa-comment">1</a></li>
-									<li><a href="#" class="icon fa-heart">14</a></li>
-									<li><a href="#" class="icon brands fa-twitter">5</a></li>
-									<li><a href="#" class="icon brands fa-facebook-f">14</a></li>
-								</ul>
-							</div>
-	      <p>繳交用<a href="https://forms.gle/ojNnQBepzVMUcmJV7" target="_blank" rel="noopener noreferrer">google表單</a>	
-		      
-	      <p><strong>【繳交格式說明】</strong><br />
-                  本次活動接受數種繳交格式，請閱讀以下條款確保繳交形式正確，如果格式錯誤大會方有權利打回直到格式正確
-              <br />
-                  1. 繳交檔案為"圖片檔"、"網頁檔"、"影片檔"三種形式為主，不可混合(如繳交三張圖片加一部影片)，若有例外請向@that_banana3000提出請求， 繳交網頁檔時請確保該檔案在其他設備(電腦、手機)上顯示正常
-							<br />
-                  2. "網頁檔"、"影片檔"以一個檔案為限
-              <br />
-                  3. "圖片檔"需要確保所有檔案的副檔名一致，可以為png,jpg,jpeg,bmp...等圖片格式， 但不接受gif檔案，gif檔案視同影片檔只可以繳交一個
-              <br />
-                  4. 繳交"圖片檔"檔案命名需要依照圖片順序命名為001,002,...，確保每一個檔案名稱都為三位數字
-              <br />
-                  5. 整份作品繳交時需要以一個命名為\`<作品名>\`的資料夾包裝壓縮打包為一個壓縮檔
-              <br />
-                  壓縮檔命名需要符合以下格式 \`<報名編號(個位數請補0)>\` '<'與'>'請不要保留
-              <br />
-                  6. 繳交時請填寫google表單 並同時上傳壓縮檔案
-              <br /><br />
-                  *舉辦方將保留隨時修改與更動以上要求的權利
-              </p>
+			<!-- Post -->
+				<article class="box post post-excerpt">
+				<header>
+					<h2><a href="#">提交公告與技術支援</a></h2>
+					<p>請依照指示將作品提交至google表單
+					</p>
+				</header>
+				<div class="info">
+					<span class="date"><span class="month">May<span></span></span> <span class="day">10</span><span class="year">, 2025</span></span>
+					<ul class="stats">
+						<li><a href="#" class="icon fa-comment">1</a></li>
+						<li><a href="#" class="icon fa-heart">14</a></li>
+						<li><a href="#" class="icon brands fa-twitter">5</a></li>
+						<li><a href="#" class="icon brands fa-facebook-f">14</a></li>
+					</ul>
+				</div>
+				<p>繳交用<a href="https://forms.gle/ojNnQBepzVMUcmJV7" target="_blank" rel="noopener noreferrer">google表單</a>	
+				      
+				<p><strong>【繳交格式說明】</strong><br />
+				  本次活動接受數種繳交格式，請閱讀以下條款確保繳交形式正確，如果格式錯誤大會方有權利打回直到格式正確
+				<br />
+				  1. 繳交檔案為"圖片檔"、"網頁檔"、"影片檔"三種形式為主，不可混合(如繳交三張圖片加一部影片)，若有例外請向@that_banana3000提出請求， 繳交網頁檔時請確保該檔案在其他設備(電腦、手機)上顯示正常
+									<br />
+				  2. "網頁檔"、"影片檔"以一個檔案為限
+				<br />
+				  3. "圖片檔"需要確保所有檔案的副檔名一致，可以為png,jpg,jpeg,bmp...等圖片格式， 但不接受gif檔案，gif檔案視同影片檔只可以繳交一個
+				<br />
+				  4. 繳交"圖片檔"檔案命名需要依照圖片順序命名為001,002,...，確保每一個檔案名稱都為三位數字
+				<br />
+				  5. 整份作品繳交時需要以一個命名為\`<作品名>\`的資料夾包裝壓縮打包為一個壓縮檔
+				<br />
+				  壓縮檔命名需要符合以下格式 \`<報名編號(個位數請補0)>\` '<'與'>'請不要保留
+				<br />
+				  6. 繳交時請填寫google表單 並同時上傳壓縮檔案
+				<br /><br />
+				  *舉辦方將保留隨時修改與更動以上要求的權利
+				</p>
+					  
+				<h3>死線計時器：</h3>
+				<div id="countdown" style="font-size: 1.5em; color: #e65022; font-weight: bold;"></div>
 
-						</article>
+				<script>
+					const countdownDate = new Date("2025-05-18T23:59:59").getTime();
+					const countdownTimer = setInterval(function() {
+					const now = new Date().getTime();
+					const distance = countdownDate - now;
+	
+					if (distance < 0) {
+						clearInterval(countdownTimer);
+						document.getElementById("countdown").innerHTML = "時辰已到！";
+						return;
+					}
+	
+					const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+					document.getElementById("countdown").innerHTML =
+					`${days} 天 ${hours} 時 ${minutes} 分 ${seconds} 秒`;}, 1000);
+				</script>
+			
+					</article>
 				</div>
 			</div>
 
