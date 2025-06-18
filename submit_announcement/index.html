@@ -59,7 +59,7 @@
 				<div id="countdown" style="font-size: 1.5em; color: #e65022; font-weight: bold;"></div>
 
 				<script>
-					const countdownDate = new Date(Date.UTC(2025, 5, 18, 23, 59, 59)+ 8 * 60 * 60 * 1000); 
+					const countdownDate = new Date(Date.UTC(2025, 5, 18, 23, 59, 59)- 8 * 60 * 60 * 1000); 
 					const countdownTimer = setInterval(function() {
 					const now = new Date().getTime();
 					const distance = countdownDate - now;
