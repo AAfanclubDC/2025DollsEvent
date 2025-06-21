@@ -3032,8 +3032,8 @@ input, select, textarea {
 	}
 	
 	.square-button:hover {
-	  background-color: #dcdcdc;
-	  border-color: #999;
+	  background-color: #fffba6;
+	  border-color: #fcf33d;
 	  transform: scale(1.03);
 	}
 
