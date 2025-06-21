@@ -35,7 +35,7 @@
 			</ul>
 		</div>
 
-		<div id="gallery"></div>
+		<iframe src="../../pieces/樱田纯与雪华的恋爱故事 - 梁明上弦月/樱田纯与雪华的恋爱故事.html" width="1200" height="5000"></iframe>
 		
 		</article>
 		</div>
@@ -83,23 +83,5 @@
 		<script src="../../assets/js/breakpoints.min.js"></script>
 		<script src="../../assets/js/util.js"></script>
 		<script src="../../assets/js/main.js"></script>
-
-	<script>
-	const basePath = '../../pieces/樱田纯与雪华的恋爱故事 - 梁明上弦月/';
-	
-	fetch(basePath + 'image_list.json')
-		.then(response => response.json())
-		.then(images => {
-			const gallery = document.getElementById('gallery');
-			images.forEach(filename => {
-				const img = document.createElement('img');
-				img.src = basePath + filename;
-				img.alt = filename;
-				img.style = "max-width: 100%; margin-bottom: 10px; display: block;";
-				gallery.appendChild(img);
-			});
-		})
-	.catch(error => {console.error('讀取圖片清單失敗:', error);});
-      	</script>
 	</body>
 </html>
