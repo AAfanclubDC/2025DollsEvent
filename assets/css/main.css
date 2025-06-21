@@ -3036,3 +3036,28 @@ input, select, textarea {
 	  border-color: #999;
 	  transform: scale(1.03);
 	}
+
+	.color1 {
+	  background-color: #ffb3b3;
+	  border-color: #ff6666;
+	}
+	
+	.color2 {
+	  background-color: #b3d9ff;
+	  border-color: #3399ff;
+	}
+	
+	.color3 {
+	  background-color: #b3ffcc;
+	  border-color: #33cc66;
+	}
+
+	.color4 {
+	  background-color: #fab55a;
+	  border-color: #ffe3bf;
+	}
+
+	.color4 {
+	  background-color: #da5afa;
+	  border-color: #edb9fa;
+	}
