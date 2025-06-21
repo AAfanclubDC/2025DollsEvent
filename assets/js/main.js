@@ -66,23 +66,4 @@
 					target: $body,
 					visibleClass: 'sidebar-visible'
 				});
-		// Blocks
-		$(function() {
-		  const colors = [
-			{bg: '#ffb3b3', border: '#ff6666'},
-			{bg: '#b3d9ff', border: '#3399ff'},
-			{bg: '#b3ffcc', border: '#33cc66'},
-			{bg: '#ffd9b3', border: '#ff9933'},
-			{bg: '#e6b3ff', border: '#9933ff'}
-		  ];
-		  
-		  $('.square-button').each(function() {
-		    const c = colors[Math.floor(Math.random() * colors.length)];
-		    $(this).css({
-			'background-color': c.bg,
-			'border-color': c.border
-		    });
-		  });
-		});
-
 })(jQuery);
